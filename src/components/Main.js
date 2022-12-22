@@ -4,10 +4,10 @@ import SignUpCard from "./SignUpCard";
 import LinksCard from "./LinksCard";
 import MainFooter from "./MainFooter";
 
-export default function Main() {
+export default function Main(props) {
   return (
     <>
-      <MainHeader />
+      <MainHeader searchClicked={props.searchClicked} />
       <SignUpCard />
       <LinksCard />
       <MainFooter />

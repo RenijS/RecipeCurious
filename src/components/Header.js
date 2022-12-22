@@ -7,7 +7,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <header className="header">
       <div className="parts">
@@ -29,7 +29,7 @@ export default function Header() {
             <FontAwesomeIcon icon={faTwitter} className="click" />
           </div>
         </span>
-        <span className="searchBtn click">
+        <span className="searchBtn click" onClick={props.searchClicked}>
           Search
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </span>
