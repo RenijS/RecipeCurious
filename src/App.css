@@ -44,13 +44,17 @@ header .parts {
   font-weight: 800;
 }
 .header svg {
-  height: 2rem;
-  width: 1.3125rem;
+  height: 1.5rem;
+  margin-left: 0.6rem;
 }
 
 .header h1,
 .brandsContainer {
   color: rgb(255, 68, 47);
+}
+
+.parts .searchBtn {
+  margin-left: 1rem;
 }
 
 .footer {
@@ -191,6 +195,78 @@ header .parts {
 
 .signUpDone {
   text-align: center;
+}
+
+.hLine {
+  border-left: 1px solid black;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+
+.linkCard .linkTitle {
+  font: bold 1rem/1rem "Renner", sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.linkCard li {
+  font: normal 0.75rem/2rem "Renner", sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(255, 68, 47);
+  color: white;
+  padding: 2rem 0;
+}
+
+.navCard strong {
+  font: bold 1.5rem "Renner", sans-serif;
+}
+
+.navCard .navTitle {
+  font: bold 0.875rem/1.125rem "Renner", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navCard .socialsUl {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.nonImageUl {
+  font: bold 0.75rem/1.0625rem "Renner", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 5px 0;
+}
+
+.socialsUl svg {
+  height: 1.6rem;
+}
+
+.click:hover,
+a:hover,
+button:hover {
+  cursor: pointer;
 }
 
 .displayGone {
