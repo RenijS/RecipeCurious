@@ -7,7 +7,7 @@ export default function MainHeader() {
   return (
     <div className="findCard">
       <strong className="findTitle">Find a Recipe</strong>
-      <section className="searchSection">
+      <section className="searchSection click">
         <FontAwesomeIcon icon={faMagnifyingGlass} />
       </section>
       <span>
