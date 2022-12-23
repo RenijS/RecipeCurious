@@ -11,7 +11,11 @@ export default function Header(props) {
   return (
     <header className="header">
       <div className="parts">
-        <FontAwesomeIcon icon={faBars} className="click" />
+        <FontAwesomeIcon
+          icon={faBars}
+          className="click"
+          onClick={props.hamMenuClicked}
+        />
         <span className="signInBtn click">
           <FontAwesomeIcon icon={faHeart} />
           Sign In
