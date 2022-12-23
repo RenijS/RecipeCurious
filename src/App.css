@@ -310,10 +310,80 @@ ul {
   height: 1.6rem;
 }
 
+.slideNavBehind {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+}
+
+.slideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  height: 100vh;
+  width: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  color: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.slideNav .cancelDiv {
+  width: 100%;
+  text-align: start;
+  margin-left: 3rem;
+}
+
+.slideNav svg {
+  height: 1.6rem;
+}
+
+.slideNav .navLogo {
+  background-color: rgb(255, 68, 47);
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif, Helvetica, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideNav li {
+  letter-spacing: 1px;
+  font-weight: 650;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.slideNav .socialsDiv {
+  font-weight: 600;
+  font-size: small;
+}
+
+.socialsDiv ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .click:hover,
 a:hover,
 button:hover {
   cursor: pointer;
+  transform: scale(1.08);
 }
 
 .displayGone {
