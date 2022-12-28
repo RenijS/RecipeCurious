@@ -10,6 +10,10 @@ body,
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 .searchPopup {
   background-color: rgba(241, 241, 241, 0.92);
   position: fixed;
@@ -55,6 +59,13 @@ body,
 
 .searchDiv input:focus {
   outline: none;
+}
+
+.sticky {
+  position: fixed;
+  width: 98%;
+  background-color: white;
+  padding-right: 1rem;
 }
 
 .header {
@@ -379,6 +390,77 @@ ul {
   justify-content: space-evenly;
 }
 
+.slideNav .signIn {
+  border: 1px solid gainsboro;
+  color: gainsboro;
+  padding: 0.5rem 1.8rem;
+  background-color: transparent;
+}
+
+.food-card-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  gap: 2rem;
+  padding: 1rem 4rem;
+  background-color: #333;
+  min-height: 81vh;
+  overflow-y: auto;
+}
+
+.food-card-wrapper .card-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-card-wrapper a {
+  text-decoration: none;
+}
+
+.view-card-title {
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+.recipe-view-card {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 24rem;
+  width: 20rem;
+  background-color: #fff;
+}
+
+.recipe-view-card .imgContainer {
+  height: 80%;
+  width: 100%;
+}
+
+.imgContainer img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.signInContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url(./images/food-left.jpg);
+  background-size: cover;
+}
+
+.signIn-form {
+  background-color: white;
+  width: max-content;
+  margin-left: auto;
+  margin-right: 8rem;
+}
+
 .click:hover,
 a:hover,
 button:hover {
@@ -388,4 +470,22 @@ button:hover {
 
 .displayGone {
   display: none;
+}
+
+/*Scrollbar*/
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #eee;
+  box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #96a6bf, #63738c);
+  box-shadow: inset 0 0 1px 1px #5c6670;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(left, #8391a6, #536175);
 }
