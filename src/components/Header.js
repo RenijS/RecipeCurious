@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +9,14 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 export default function Header(props) {
+  window.onscroll = () => {
+    if (window.pageYOffset > document.querySelector(".header").offsetTop) {
+      document.querySelector(".header").classList.add("sticky");
+    } else {
+      document.querySelector(".header").classList.remove("sticky");
+    }
+  };
+
   return (
     <header className="header">
       <div className="parts">
@@ -22,7 +31,9 @@ export default function Header(props) {
         </span>
       </div>
       <div className="parts">
-        <h1 className="click">RecipeCurious</h1>
+        <Link to="/">
+          <h1 className="click">RecipeCurious</h1>
+        </Link>
       </div>
       <div className="parts">
         <span className="followContainer">

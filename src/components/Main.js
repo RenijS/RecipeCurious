@@ -1,8 +1,8 @@
 import React from "react";
-import MainHeader from "./MainHeader";
-import SignUpCard from "./SignUpCard";
-import LinksCard from "./LinksCard";
-import MainFooter from "./MainFooter";
+import MainHeader from "./Main/MainHeader";
+import SignUpCard from "./Main/SignUpCard";
+import LinksCard from "./Main/LinksCard";
+import MainFooter from "./Main/MainFooter";
 
 export default function Main(props) {
   return (

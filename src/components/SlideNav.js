@@ -21,7 +21,11 @@ export default function SlideNav(props) {
         style={{ width: props.isHamMenuActive ? "18rem" : "0px" }}
       >
         <div className="cancelDiv">
-          <FontAwesomeIcon icon={faXmark} onClick={props.hamMenuCancelled} />
+          <FontAwesomeIcon
+            icon={faXmark}
+            onClick={props.hamMenuCancelled}
+            className="click"
+          />
         </div>
         <div className="navLogo">
           <span>RC</span>
