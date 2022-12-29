@@ -1,7 +1,9 @@
 import React from "react";
 import RecipeHeader from "./components/Recipe/RecipeHeader";
+import Ingredients from "./components/Recipe/Ingredients";
 
 export default function Recipe(props) {
+  console.log(props);
   const headerInfos = {
     name: props.items.name,
     prepTime: props.items.prep_time_minutes,
@@ -14,6 +16,7 @@ export default function Recipe(props) {
   return (
     <>
       <RecipeHeader info={headerInfos} />
+      <Ingredients sections={props.items.sections} />
     </>
   );
 }

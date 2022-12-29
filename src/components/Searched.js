@@ -21,9 +21,7 @@ export default function Searched() {
     )
       .then((response) => response.json())
       .then((response) => {
-        console.log(response);
         setApiArr([...response.results]);
-        console.log("Api Array", apiArr);
       })
       .catch((err) => console.error(err));
   }, [param.searchedItem]);
