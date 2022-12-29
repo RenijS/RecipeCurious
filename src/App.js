@@ -8,6 +8,7 @@ import SearchPopup from "./components/SearchPopup";
 import SlideNav from "./components/SlideNav";
 import Searched from "./components/Searched";
 import SignIn from "./components/SignIn";
+import Food from "./components/Food";
 
 function App() {
   const [isSearchActive, setIsSearchActive] = useState(false);
@@ -41,19 +42,20 @@ function App() {
                   isSearchActive={isSearchActive}
                   searchCancelled={searchCancelled}
                 />
-                <SlideNav
-                  isHamMenuActive={isHamMenuActive}
-                  hamMenuCancelled={hamMenuCancelled}
-                />
                 <Header
                   searchClicked={searchClicked}
                   hamMenuClicked={hamMenuClicked}
+                />
+                <SlideNav
+                  isHamMenuActive={isHamMenuActive}
+                  hamMenuCancelled={hamMenuCancelled}
                 />
                 <Main searchClicked={searchClicked} />
                 <Footer />
               </>
             }
           ></Route>
+          <Route path="/signIn" element={<SignIn />}></Route>
           <Route
             path="/search/:searchedItem"
             element={
@@ -62,20 +64,20 @@ function App() {
                   isSearchActive={isSearchActive}
                   searchCancelled={searchCancelled}
                 />
-                <SlideNav
-                  isHamMenuActive={isHamMenuActive}
-                  hamMenuCancelled={hamMenuCancelled}
-                />
                 <Header
                   searchClicked={searchClicked}
                   hamMenuClicked={hamMenuClicked}
+                />
+                <SlideNav
+                  isHamMenuActive={isHamMenuActive}
+                  hamMenuCancelled={hamMenuCancelled}
                 />
                 <Searched />
                 <Footer />
               </>
             }
           ></Route>
-          <Route path="/signIn" element={<SignIn />}></Route>
+          <Route path="/recipes/:id" element={<Food />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
