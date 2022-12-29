@@ -25,10 +25,12 @@ export default function Header(props) {
           className="click"
           onClick={props.hamMenuClicked}
         />
-        <span className="signInBtn click">
-          <FontAwesomeIcon icon={faHeart} />
-          Sign In
-        </span>
+        <Link to={"/signIn"}>
+          <span className="signInBtn click">
+            <FontAwesomeIcon icon={faHeart} />
+            Sign In
+          </span>
+        </Link>
       </div>
       <div className="parts">
         <Link to="/">
