@@ -32,7 +32,7 @@ export default function Searched() {
       {apiArr.length != 0 &&
         apiArr.map((items) => {
           return (
-            <div className="card-outer">
+            <div className="card-outer" key={items.id}>
               <FoodCard items={items} />
             </div>
           );

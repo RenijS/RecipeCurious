@@ -1,11 +1,10 @@
 import React from "react";
-import upcomingImg from "../../images/comingSoon.jpg";
 
 export default function FoodCard(props) {
   console.log(props);
   return (
     <>
-      <a href="" className="recipe-view-card">
+      <a href={`/recipes/${props.items.id}`} className="recipe-view-card">
         <div className="imgContainer">
           <img
             src={props.items.thumbnail_url}

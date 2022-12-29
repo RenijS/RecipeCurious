@@ -5,7 +5,6 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function SearchPopup(props) {
   const [search, setSearch] = useState("");
-
   const searchChange = (e) => {
     setSearch(e.target.value);
   };
