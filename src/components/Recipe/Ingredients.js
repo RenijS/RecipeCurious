@@ -5,10 +5,13 @@ export default function Ingredients(props) {
   return (
     <div className="ingredients-sect">
       <h2>Ingredients</h2>
-      <ul className="ingredients-ul">
+      <div className="ingredients-ul-div">
         {props.sections.map((element) => {
           return (
-            <>
+            <ul className="ingredients-ul">
+              <span className="ul-title">
+                {element.name !== null && `For ${element.name}`}
+              </span>
               {element.components.map((cpnt) => {
                 return (
                   <li>
@@ -18,10 +21,10 @@ export default function Ingredients(props) {
                   </li>
                 );
               })}
-            </>
+            </ul>
           );
         })}
-      </ul>
+      </div>
     </div>
   );
 }

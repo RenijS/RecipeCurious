@@ -1,6 +1,7 @@
 import React from "react";
 import RecipeHeader from "./components/Recipe/RecipeHeader";
 import Ingredients from "./components/Recipe/Ingredients";
+import Instructions from "./components/Recipe/Instructions";
 
 export default function Recipe(props) {
   console.log(props);
@@ -17,6 +18,7 @@ export default function Recipe(props) {
     <>
       <RecipeHeader info={headerInfos} />
       <Ingredients sections={props.items.sections} />
+      <Instructions instructions={props.items.instructions} />
     </>
   );
 }

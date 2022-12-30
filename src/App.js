@@ -77,7 +77,27 @@ function App() {
               </>
             }
           ></Route>
-          <Route path="/recipes/:id" element={<Food />}></Route>
+          <Route
+            path="/recipes/:id"
+            element={
+              <>
+                <SearchPopup
+                  isSearchActive={isSearchActive}
+                  searchCancelled={searchCancelled}
+                />
+                <Header
+                  searchClicked={searchClicked}
+                  hamMenuClicked={hamMenuClicked}
+                />
+                <SlideNav
+                  isHamMenuActive={isHamMenuActive}
+                  hamMenuCancelled={hamMenuCancelled}
+                />
+                <Food />
+                <Footer />
+              </>
+            }
+          ></Route>
         </Routes>
       </BrowserRouter>
     </div>
