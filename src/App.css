@@ -80,6 +80,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
+  border-bottom: 1px solid #bbb;
 }
 
 header .parts {
@@ -541,14 +542,26 @@ ul {
 
 .ingredients-sect {
   padding: 1rem 3rem;
+  height: max-content;
+}
+
+.ingredients-ul-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .ingredients-ul {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 6.5rem;
-  padding: 0 0.5rem;
+  width: max-content;
+}
+
+.ingredients-ul .ul-title {
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
 }
 .ingredients-ul li {
   width: max-content;
