@@ -8,6 +8,7 @@ body,
 #root,
 .App {
   min-height: 100vh;
+  min-width: 100vh;
 }
 
 .column {
@@ -272,6 +273,16 @@ header .parts {
   padding: 2rem 0;
 }
 
+.linksUl li {
+  text-decoration: underline transparent;
+  width: max-content;
+}
+
+.linksUl li:hover {
+  text-decoration-color: #333;
+  transition: 0.2s text-decoration-color ease-in;
+}
+
 .linkCard .linkTitle {
   font: bold 1rem/1rem "Renner", sans-serif;
   color: #333;
@@ -403,6 +414,30 @@ ul {
   background-color: transparent;
 }
 
+.comp-card-wrapper {
+  background-color: #333;
+}
+
+.divCrossImage {
+  width: 100%;
+  text-align: end;
+}
+
+.divCrossImage svg {
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+.comp-card-wrapper .divVertImage {
+  width: 100%;
+  text-align: center;
+}
+
+.comp-card-wrapper svg {
+  height: 3rem;
+  color: #bbb;
+}
+
 .food-card-wrapper {
   height: 100%;
   display: grid;
@@ -423,6 +458,22 @@ ul {
 
 .food-card-wrapper a {
   text-decoration: none;
+}
+
+.errorScreen,
+.notFoundScreen,
+.loadingScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+}
+.errorScreen p,
+.notFoundScreen p {
+  font-size: xx-large;
+  font-weight: 500;
+  margin: 1rem 0;
 }
 
 .view-card-title {
@@ -506,15 +557,17 @@ ul {
 }
 
 .recipe-header {
-  height: 30rem;
+  height: 32rem;
   display: flex;
-  flex-direction: row-reverse;
+  border-bottom: 1px wheat solid;
 }
 
 .recipe-header .header-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
 .header-info .header-name {
@@ -531,7 +584,6 @@ ul {
 
 .recipe-header .header-img {
   width: 60%;
-  padding: 1rem;
 }
 
 .header-img img {
@@ -541,8 +593,12 @@ ul {
 }
 
 .ingredients-sect {
-  padding: 1rem 3rem;
   height: max-content;
+}
+
+.ingredients-sect h2 {
+  padding: 0.4rem 0;
+  border-bottom: 2px wheat solid;
 }
 
 .ingredients-ul-div {
@@ -556,6 +612,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: max-content;
+  margin: 0.4rem 0;
 }
 
 .ingredients-ul .ul-title {
@@ -565,6 +622,57 @@ ul {
 }
 .ingredients-ul li {
   width: max-content;
+}
+
+.recipe-info-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-info-div .recipe-info-sect {
+  width: max-content;
+  max-width: 80%;
+}
+
+.instruction-ul,
+.ingredients-ul {
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.600000023841858em;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-wrap: normal;
+  color: rgba(51, 51, 51, 1);
+}
+
+.instruction-ul li {
+  margin-top: 1.2rem;
+}
+
+.instruction-ul .step-count {
+  font-weight: 700;
+}
+.instruction-ul p {
+  margin: 0.4rem 0;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .click:hover,
