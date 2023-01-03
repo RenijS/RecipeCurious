@@ -15,7 +15,7 @@ export default function RecipeHeader(props) {
         )}
         {props.info.cookTime != null && (
           <span className="header-cookTime">
-            Prep time: {props.info.cookTime}min
+            Cook time: {props.info.cookTime}min
           </span>
         )}
         {props.info.numServings != null && (

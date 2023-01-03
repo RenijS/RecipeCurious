@@ -8,7 +8,8 @@ export default function Instructions(props) {
         {props.instructions.map((action) => {
           return (
             <li key={action.id}>
-              {action.position} <p>{action.display_text}</p>
+              <span className="step-count"> Step {action.position}</span>
+              <p>{action.display_text}</p>
             </li>
           );
         })}

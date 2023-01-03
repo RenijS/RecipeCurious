@@ -17,8 +17,12 @@ export default function Recipe(props) {
   return (
     <>
       <RecipeHeader info={headerInfos} />
-      <Ingredients sections={props.items.sections} />
-      <Instructions instructions={props.items.instructions} />
+      <div className="recipe-info-div">
+        <div className="recipe-info-sect">
+          <Ingredients sections={props.items.sections} />
+          <Instructions instructions={props.items.instructions} />
+        </div>
+      </div>
     </>
   );
 }
