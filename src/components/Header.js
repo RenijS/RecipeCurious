@@ -25,7 +25,7 @@ export default function Header(props) {
           className="click"
           onClick={props.hamMenuClicked}
         />
-        <Link to={"/signIn"}>
+        <Link to={"/signIn"} className="signInLink">
           <span className="signInBtn click">
             <FontAwesomeIcon icon={faHeart} />
             Sign In
@@ -34,7 +34,9 @@ export default function Header(props) {
       </div>
       <div className="parts">
         <Link to="/">
-          <h1 className="click">RecipeCurious</h1>
+          <h1 className="click">
+            {window.innerWidth < 600 ? "RC" : "RecipeCurious"}
+          </h1>
         </Link>
       </div>
       <div className="parts">
@@ -47,7 +49,7 @@ export default function Header(props) {
           </div>
         </span>
         <span className="searchBtn click" onClick={props.searchClicked}>
-          Search
+          {window.innerWidth < 600 ? "" : "Search"}
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </span>
       </div>

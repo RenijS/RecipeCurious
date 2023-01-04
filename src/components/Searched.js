@@ -39,7 +39,7 @@ export default function Searched() {
       .then((response) => response.json())
       .then((response) => {
         console.log(response);
-        if (response.results != undefined && response.results.length < 1) {
+        if (response.results !== undefined && response.results.length < 1) {
           setNotFound(true);
         } else {
           setApiArr([...response.results]);
@@ -52,7 +52,7 @@ export default function Searched() {
   }, [param.searchedItem]);
   return (
     <>
-      {compRecipeInfo.recipes.length != 0 && (
+      {compRecipeInfo.recipes.length !== 0 && (
         <div className="comp-card-wrapper">
           <div className="divCrossImage">
             <FontAwesomeIcon
@@ -83,7 +83,7 @@ export default function Searched() {
 
       <div className="food-card-wrapper">
         {!isError &&
-          apiArr.length != 0 &&
+          apiArr.length !== 0 &&
           apiArr.map((items) => {
             return (
               <div className="card-outer" key={items.id}>
@@ -92,7 +92,7 @@ export default function Searched() {
             );
           })}
         {isError && !notFound && <Error />}
-        {!isError && !notFound && apiArr.length == 0 && <Loading />}
+        {!isError && !notFound && apiArr.length === 0 && <Loading />}
         {notFound && !isError && <></>}
       </div>
     </>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -51,7 +52,9 @@ export default function SlideNav(props) {
             </li>
           </ul>
         </div>
-        <button className="signIn">Sign In</button>
+        <Link to={"/signIn"}>
+          <button className="signIn">Sign In</button>
+        </Link>
       </nav>
     </>
   );

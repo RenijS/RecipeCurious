@@ -25,7 +25,7 @@ export default function RecipeHeader(props) {
         )}
       </div>
       <div className="header-img">
-        <img src={props.info.thumbnail_url} alt="food image" />
+        <img src={props.info.thumbnail_url} alt="food" />
       </div>
     </div>
   );
