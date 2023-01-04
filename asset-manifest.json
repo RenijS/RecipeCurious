@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/RecipeCurious/static/css/main.b4a61e8e.css",
-    "main.js": "/RecipeCurious/static/js/main.8cac187e.js",
-    "static/media/food-left.jpg": "/RecipeCurious/static/media/food-left.64bff0052d67d0d0fc87.jpg",
-    "static/media/circular-food.jpg": "/RecipeCurious/static/media/circular-food.75c3d1fb704247f09dda.jpg",
-    "index.html": "/RecipeCurious/index.html",
-    "main.b4a61e8e.css.map": "/RecipeCurious/static/css/main.b4a61e8e.css.map",
-    "main.8cac187e.js.map": "/RecipeCurious/static/js/main.8cac187e.js.map"
+    "main.css": "/static/css/main.bf26cee2.css",
+    "main.js": "/static/js/main.8cac187e.js",
+    "static/media/food-left.jpg": "/static/media/food-left.64bff0052d67d0d0fc87.jpg",
+    "static/media/circular-food.jpg": "/static/media/circular-food.75c3d1fb704247f09dda.jpg",
+    "index.html": "/index.html",
+    "main.bf26cee2.css.map": "/static/css/main.bf26cee2.css.map",
+    "main.8cac187e.js.map": "/static/js/main.8cac187e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4a61e8e.css",
+    "static/css/main.bf26cee2.css",
     "static/js/main.8cac187e.js"
   ]
 }
