@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function FoodCard(props) {
-  console.log(props);
   return (
     <>
       {props.items.is_shoppable && (
