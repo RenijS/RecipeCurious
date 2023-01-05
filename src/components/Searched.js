@@ -24,11 +24,15 @@ export default function Searched() {
     window.scrollTo(0, 0);
   };
 
+  if (process.env.REACT_APP_SECONDARY_RAPID_API_KEY == undefined) {
+    console.log("Please subscribe to the api and add API KEY");
+  }
+
   useEffect(() => {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_SECONDARY_RAPID_API_KEY,
+        "X-RapidAPI-Key": "9437f06de2msh595bac5ce70161cp13f81fjsn7c0e1d2b5149",
         "X-RapidAPI-Host": "tasty.p.rapidapi.com",
       },
     };
