@@ -9,7 +9,7 @@ export default function Food() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_SECONDARY_RAPID_API_KEY,
+        "X-RapidAPI-Key": "9437f06de2msh595bac5ce70161cp13f81fjsn7c0e1d2b5149",
         "X-RapidAPI-Host": "tasty.p.rapidapi.com",
       },
     };
